@@ -1,0 +1,102 @@
+.gvp-container {
+  margin-left: 260px;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.gvp-title {
+  color: #0b3d91;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.gvp-table {
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.gvp-table thead {
+  background: linear-gradient(90deg, #0b3d91, #1e90ff);
+  color: white;
+}
+
+.gvp-table th {
+  text-align: center;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.gvp-table td {
+  text-align: center;
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.gvp-table tbody tr {
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.gvp-table tbody tr:hover {
+  background-color: #f1f5ff;
+  transform: scale(1.01);
+}
+
+.gvp-name {
+  color: #0b3d91;
+  font-weight: 500;
+}
+
+.gvp-data {
+  color: #ff9900;
+}
+
+.gvp-amount {
+  color: #0b3d91;
+  font-weight: 600;
+}
+
+.gvp-validity {
+  color: #ff9900;
+}
+
+.gvp-desc {
+  color: #333;
+}
+
+.gvp-loading,
+.gvp-no-record {
+  text-align: center;
+  font-size: 18px;
+  color: #ff0000;
+  margin-top: 40px;
+}
+.btn-login-buy {
+  background: linear-gradient(90deg, #ff6d1eff, #0b3d91);
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login-buy:hover {
+  background: linear-gradient(90deg, #0b3d91, #1e90ff);
+  box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4);
+  transform: translateY(-2px);
+}
+

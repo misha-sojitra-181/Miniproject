@@ -1,0 +1,107 @@
+.bod{
+  background: linear-gradient(to bottom right, #eef2fb, #ffffff);
+  font-family: "Poppins", sans-serif;
+  color: #16009e;
+ 
+}
+.container-fluid {
+   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin-left: 140px;
+}
+
+/* Card */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+}
+
+/* Left panel */
+.left-panel {
+  background-color: #d1ddf5;
+  color: #16009e;
+  padding: 60px 30px;
+  text-align: center;
+  flex: 1;
+}
+
+.left-panel h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.left-panel p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.left-panel img {
+  margin-top: 40px;
+  width: 90px;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  padding: 60px 50px;
+}
+
+.right-panel h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.right-panel label {
+  font-weight: 500;
+}
+
+.right-panel input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-send {
+  width: 100%;
+  background: linear-gradient(to right, #0f092bff, #bba7f6ff);
+  color: #0e0e0eff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  background: linear-gradient(to right, #bba7f6ff, #0f092bff);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+  .left-panel {
+    padding: 40px 20px;
+  }
+  .right-panel {
+    padding: 40px 20px;
+  }
+}

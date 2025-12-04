@@ -1,0 +1,112 @@
+/* Full-page background */
+/* .bod {
+  background-image: url("/images/signupimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+} */
+
+/* Glassmorphism form container */
+.register-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+}
+
+/* Title */
+.register-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #f0f0f0;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(to right, #7209b7, #f72585);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Success and error messages */
+.success {
+  color: #0f0;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff3333;
+  font-weight: bold;
+}
+
+/* Image preview */
+.preview img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.login-link span {
+  color: #f72585;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-link span:hover {
+  text-decoration: underline;
+}

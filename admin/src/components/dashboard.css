@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ecf3ff, #f7f0ff);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  margin-left: 40px;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+/* ===== Dashboard Title ===== */
+.title {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.title i {
+  margin-right: 10px;
+  font-size: 40px;
+  color: #0b3d91;
+}
+
+.title h2 {
+  color: #0b3d91;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* ===== Card Layout ===== */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ===== Card Box Style ===== */
+.card-box {
+  width: 270px;
+  height: 170px;
+  border-radius: 22px;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 10px solid transparent;
+  margin: 40px;
+}
+
+/* Hover effect */
+.card-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons */
+.card-box i {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+/* Title */
+.card-box p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+/* Value */
+.card-box h3 {
+  font-size: 32px;
+  margin: 8px 0;
+  color: #111;
+  font-weight: 700;
+}
+
+/* ===== Individual Card Colors with Gradient Borders ===== */
+.plans {
+  background: linear-gradient(135deg, #e8f8f0, #d1f4e2);
+  border-left-color: #34c38f;
+}
+
+.wifi {
+  background: linear-gradient(135deg, #e9f1ff, #d3e0ff);
+  border-left-color: #4e74ff;
+}
+
+.requests {
+  background: linear-gradient(135deg, #f4eaff, #e9d8ff);
+  border-left-color: #a855f7;
+}
+
+.mprofit {
+  background: linear-gradient(135deg, #ffeaf3, #ffd5e8);
+  border-left-color: #ff5fa2;
+}
+
+.wprofit {
+  background: linear-gradient(135deg, #fff0e6, #ffe0cc);
+  border-left-color: #ff8f3d;
+}
+
+.feedback {
+  background: linear-gradient(135deg, #f5f8da, #edf3b8);
+  border-left-color: #a2c600;
+}
+
+/* Chart Wrapper */
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

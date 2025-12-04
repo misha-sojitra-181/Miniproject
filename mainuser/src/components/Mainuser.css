@@ -1,0 +1,48 @@
+ 
+    .hero-carousel .carousel-item img {
+      width: 50%;
+      height: 70vh;           
+      object-fit: cover;       
+      border-radius: 20px;
+    }
+    .hero-carousel { 
+      padding: 24px; 
+    }
+    .services {
+       padding: 60px 15px; 
+    }
+    .service-card { 
+      transition: transform .25s ease, box-shadow .25s ease; 
+    }
+    .service-card:hover { 
+      transform: translateY(-6px); 
+      box-shadow: 0 8px 30px rgba(0,0,0,.08); 
+    }
+    .service-icon { 
+      font-size: 44px; 
+      color: #7a3fc0; 
+      margin-bottom: 16px; 
+    }
+    .team { 
+      padding: 60px 15px; 
+      background: #fafafa; 
+    }
+    .team-card { 
+      border-radius: 10px; 
+      overflow: hidden; 
+      box-shadow: 0 6px 20px rgba(0,0,0,.05); 
+    }
+    .team-card img { 
+      width:100%; 
+      height:220px; 
+      object-fit:cover; 
+      display:block; 
+    }
+    .main-content { 
+      width: 100%;
+      padding-left:10px;
+    }
+    @media (max-width: 570px) {
+      .hero-carousel .carousel-item img { height: 40vh; }
+      .team-card img { height:160px; }
+    }
