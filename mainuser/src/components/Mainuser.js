@@ -32,9 +32,9 @@ export default function Guestmain() {
   ];
 
   const team = [
-    { name: "Shruti Golakiya", img: "shruti1.jpg" },
-    { name: "Misha Sojitra", img: "mishu.jpg" },
-    { name: "Dhruvi Sojitra", img: "dhruvi.jpg" },
+    { name: "Shruti Golakiya", img: "mainuser/public/Images/shruti1.jpg" },
+    { name: "Misha Sojitra", img: "mainuser/public/Images/mishu.jpg" },
+    { name: "Dhruvi Sojitra", img: "mainuser/public/Images/dhruvi.jpg" },
   ];
 
   return (
