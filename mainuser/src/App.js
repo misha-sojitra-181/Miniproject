@@ -25,6 +25,7 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
+             <Route path="/" element={<Mainuser />} />
             <Route path="/loginmini" element={<Loginmini />} />
             <Route path="/forgotpaslogin" element={<ForgotpasLogin />} />
             <Route path="/changepaslogin" element={<ChangepasLogin />} />
