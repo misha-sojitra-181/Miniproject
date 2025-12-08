@@ -31,11 +31,12 @@ export default function Guestmain() {
     },
   ];
 
-  const team = [
-    { name: "Shruti Golakiya", img: "mainuser/public/Images/shruti1.jpg" },
-    { name: "Misha Sojitra", img: "mainuser/public/Images/mishu.jpg" },
-    { name: "Dhruvi Sojitra", img: "mainuser/public/Images/dhruvi.jpg" },
-  ];
+ const team = [
+  { name: "Shruti Golakiya", img: "/Images/shruti1.jpg" },
+  { name: "Misha Sojitra", img: "/Images/mishu.jpg" },
+  { name: "Dhruvi Sojitra", img: "/Images/dhruvi.jpg" },
+];
+
 
   return (
     <div className="guest-main-wrapper" style={{ display: "flex" }}>
