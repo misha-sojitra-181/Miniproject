@@ -23,6 +23,22 @@
     background-position: 0% 50%;
   }
 }
+/* Make emojis horizontal only on small screens */
+@media (max-width: 768px) {
+  .emoji-col {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* spacing between emojis */
+  }
+
+  .emoji-col img {
+    margin: 0 !important;  /* Remove vertical spacing */
+    width: 70px;           /* Slightly smaller for mobile */
+  }
+}
+
 
 .feedback-container {
   max-width: 700px;
