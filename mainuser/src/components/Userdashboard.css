@@ -1,59 +1,45 @@
-/* MAIN LAYOUT */
+/* Layout wrapper */
 .bod {
-  display: flex;
-}
-
-/* SIDEBAR (Desktop Default) */
-.sidebar {
-  width: 250px;
+  display: flex !important;       /* Always side-by-side */
+  flex-direction: row !important; /* Prevent stacking */
   min-height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: #f8f9fa;
-  border-right: 1px solid #ddd;
-  padding: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
-/* CONTENT */
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #2c3e50;
+  color: white;
+  flex-shrink: 0;  /* Prevent shrinking on mobile */
+  padding: 20px;
+}
+
+/* Sidebar links */
+.nav-link {
+  color: white !important;
+  margin: 10px 0;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Content area */
 .content {
-  flex-grow: 1;
+  flex: 1;
   padding: 20px;
-  margin-left: 250px; /* Push content to right of sidebar */
 }
 
-/* ============================
-    RESPONSIVE DESIGN
-============================ */
-
-/* TABLET & MOBILE */
-@media (max-width: 992px) {
+/* ⭐ MOST IMPORTANT PART ⭐ */
+/* Force sidebar to stay left even on small screens */
+@media (max-width: 768px) {
   .bod {
-    flex-direction: column;
+    flex-direction: row !important;  /* DO NOT stack */
+    overflow-x: auto;                /* Allow scroll instead of jumping */
   }
 
   .sidebar {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-  }
-
-  .content {
-    margin-left: 0 !important;
-    margin-top: 10px;
-  }
-}
-
-/* MOBILE SMALL SCREEN */
-@media (max-width: 600px) {
-  .sidebar .nav-link {
-    padding: 12px;
-    font-size: 16px;
+    width: 200px;
   }
 }
