@@ -1,13 +1,8 @@
-/* ============================
-   📱 MOBILE / TABLET SETTINGS
-   ============================ */
-@media (max-width: 992px) {
+.bod {
+  display: flex;
+}
 
-  .bod {
-    flex-direction: column;
-  }
-
- .sidebar {
+.sidebar {
   width: 250px;
   min-height: 100vh;
   background-color: #f8f9fa;
@@ -15,62 +10,39 @@
   padding: 20px;
   overflow-y: auto;
   overflow-x: hidden;
-  position: relative; /* changed */
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
-
-  .sidebar .nav-link {
-    display: inline-block; 
-    margin-right: 10px;
-    box-shadow: none;
-  }
-
-  .content {
-    margin-left: 0 !important;
-    padding-top: 20px;
-  }
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
 }
 
-@media (max-width: 600px) {
-
-  .sidebar {
-    text-align: center;
-  }
-
-  .sidebar .nav-link {
-    display: block; 
-    margin: 10px 0;
-    padding: 12px;
-  }
-}
+/* RESPONSIVE */
 @media (max-width: 992px) {
-
   .bod {
     flex-direction: column;
   }
 
   .sidebar {
+    position: relative;
     width: 100%;
     min-height: auto;
-    position: relative;
     border-right: none;
     border-bottom: 1px solid #ddd;
   }
 
   .content {
-    margin-left: 0 !important;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 600px) {
-
   .sidebar .nav-link {
     display: block;
-    margin: 10px 0;
     padding: 12px;
-  }
-
-  .sidebar h4 {
-    font-size: 18px;
   }
 }
