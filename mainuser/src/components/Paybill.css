@@ -1,22 +1,23 @@
-.bod{
+.bod {
   background: linear-gradient(to bottom right, #eef2fb, #ffffff);
   font-family: "Poppins", sans-serif;
   color: #16009e;
- 
 }
+
+/* Center Content */
 .container-fluid {
-   min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-   margin-left: 140px;
+  margin-left: 10%; /* 140px -> 10% */
 }
 
 /* Card */
 .card {
   border: none;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   max-width: 1000px;
   width: 100%;
@@ -28,36 +29,36 @@
 .left-panel {
   background-color: #d1ddf5;
   color: #16009e;
-  padding: 60px 30px;
+  padding: 6% 3%; /* 60px 30px */
   text-align: center;
   flex: 1;
 }
 
 .left-panel h1 {
-  font-size: 34px;
+  font-size: 2.2rem; /* 34px */
   font-weight: 700;
 }
 
 .left-panel p {
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 1.2rem; /* 18px */
+  margin-top: 2%; /* 20px */
 }
 
 .left-panel img {
-  margin-top: 40px;
-  width: 90px;
+  margin-top: 4%; /* 40px */
+  width: 10%; /* 90px relative to layout */
 }
 
 /* Right panel */
 .right-panel {
   flex: 1;
-  padding: 60px 50px;
+  padding: 6% 5%; /* 60px 50px */
 }
 
 .right-panel h2 {
-  font-size: 28px;
+  font-size: 1.8rem; /* 28px */
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 3%; /* 30px */
 }
 
 .right-panel label {
@@ -66,19 +67,20 @@
 
 .right-panel input {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 1%; /* 10px */
+  margin-top: 1%; /* 5px */
   border: 1px solid #ccc;
   border-radius: 8px;
 }
 
+/* Button */
 .btn-send {
   width: 100%;
   background: linear-gradient(to right, #0f092bff, #bba7f6ff);
   color: #0e0e0eff;
   border-radius: 8px;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 1.2%; /* 10px */
+  margin-top: 2%; /* 20px */
   transition: background 0.3s;
   border: none;
   cursor: pointer;
@@ -94,14 +96,21 @@
   .card {
     flex-direction: column;
   }
+
   .left-panel,
   .right-panel {
     width: 100%;
   }
+
   .left-panel {
-    padding: 40px 20px;
+    padding: 4% 3%; /* 40px 20px */
   }
+
   .right-panel {
-    padding: 40px 20px;
+    padding: 4% 3%;
+  }
+
+  .container-fluid {
+    margin-left: 0 !important;
   }
 }
