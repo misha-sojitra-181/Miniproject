@@ -43,3 +43,34 @@
     padding: 12px;
   }
 }
+@media (max-width: 992px) {
+
+  .bod {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .sidebar .nav-link {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  .sidebar h4 {
+    font-size: 18px;
+  }
+}
