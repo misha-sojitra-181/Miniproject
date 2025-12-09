@@ -1,7 +1,5 @@
-
-
 const projectName = "Instant TopUp";
-const logo = "/Images/logo.png"; // Make sure this image exists in public/images
+const logo = "/Images/logo.png";
 
 const menu = [
   { name: "Home", link: "/Mainuser", icon: "fa-solid fa-house" },
@@ -40,6 +38,4 @@ function Userdashboard() {
   );
 }
 
-
 export default Userdashboard;
-
