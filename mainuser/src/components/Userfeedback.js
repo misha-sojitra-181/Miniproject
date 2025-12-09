@@ -88,14 +88,12 @@ const Userfeedback = () => {
           {message && <p className="text-danger text-center">{message}</p>}
 
           <div className="row">
-            {/* Emoji Column */}
-            <div className="col-md-3 emoji-col text-center mb-5" style={{marginTop:'-30px'}}>
-              <img src="./Images/Green.png" alt="Happy" width="90px" />
-              <br />
-              <img src="./Images/Yellow.png" alt="Neutral" width="90px" />
-              <br />
-              <img src="./Images/Red.png" alt="Sad" width="90px" />
-            </div>
+  <div className="col-md-3 emoji-col text-center mb-5" style={{ marginTop: "-30px" }}>
+    <img src="./Images/Green.png" alt="Happy" width="90px" />
+    <img src="./Images/Yellow.png" alt="Neutral" width="90px" />
+    <img src="./Images/Red.png" alt="Sad" width="90px" />
+  </div>
+</div>
 
             {/* Feedback Form */}
             <div className="col-md-9">
