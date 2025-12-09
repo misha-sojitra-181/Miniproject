@@ -1,27 +1,34 @@
+/* MAIN LAYOUT */
 .bod {
   display: flex;
 }
 
+/* SIDEBAR (Desktop Default) */
 .sidebar {
   width: 250px;
   min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
   background-color: #f8f9fa;
   border-right: 1px solid #ddd;
   padding: 20px;
   overflow-y: auto;
   overflow-x: hidden;
-  position: fixed;
-  left: 0;
-  top: 0;
 }
 
+/* CONTENT */
 .content {
   flex-grow: 1;
   padding: 20px;
-  margin-left: 250px;
+  margin-left: 250px; /* Push content to right of sidebar */
 }
 
-/* RESPONSIVE */
+/* ============================
+    RESPONSIVE DESIGN
+============================ */
+
+/* TABLET & MOBILE */
 @media (max-width: 992px) {
   .bod {
     flex-direction: column;
@@ -31,18 +38,22 @@
     position: relative;
     width: 100%;
     min-height: auto;
+    height: auto;
     border-right: none;
     border-bottom: 1px solid #ddd;
+    padding: 10px;
   }
 
   .content {
-    margin-left: 0;
+    margin-left: 0 !important;
+    margin-top: 10px;
   }
 }
 
+/* MOBILE SMALL SCREEN */
 @media (max-width: 600px) {
   .sidebar .nav-link {
-    display: block;
     padding: 12px;
+    font-size: 16px;
   }
 }
