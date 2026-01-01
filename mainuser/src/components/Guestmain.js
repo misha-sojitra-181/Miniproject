@@ -120,7 +120,7 @@ export default function Guestmain() {
               <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
                 <div className="team-card">
                   <img
-                    src={`/images/${member.img}`}
+                    src={`mainuser/public/Images/shruti1.jpg`}
                     alt={member.name}
                     className="team-img"
                   />
